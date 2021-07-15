@@ -13,6 +13,11 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
+
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -20,7 +25,7 @@
       <div class="container header-box">
         <nav class="nav-box">
           <a href="./index.html" class="logo">
-            Web
+            Webstudio
 
             <span class="accent-head"></span>
           </a>
@@ -38,9 +43,15 @@
 
         <ul class="contact-nav list">
           <li class="contact-nav item">
+            <svg class="contact-icon">
+              <use href="./images/icons.svg#email"></use>
+            </svg>
             <a href="info@devstudio.com" class="link">info@devstudio.com</a>
           </li>
           <li class="contact-nav item">
+            <svg class="contact-icon phone">
+              <use href="./images/icons.svg#phone"></use>
+            </svg>
             <a href="tel:+380991111111" class="link">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -49,7 +60,7 @@
 
     <main>
       <section class="section hero">
-        <div class="container">
+        <div class="container overlay">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="button hero-btn">Заказать услугу</button>
         </div>
@@ -60,6 +71,11 @@
         <div class="container">
           <ul class="features list">
             <li class="item">
+              <div class="backsvg">
+                <svg class="svgformaticon">
+                  <use href="./images/icons.svg#iconinternet"></use>
+                </svg>
+              </div>
               <h3 class="features-list-title">Внимание к деталям</h3>
               <p class="text">
                 Идейные соображения, а также начало повседневной работы по
@@ -68,14 +84,24 @@
             </li>
 
             <li class="item">
+              <div class="backsvg">
+                <svg class="svgformaticon">
+                  <use href="./images/icons.svg#iconclock"></use>
+                </svg>
+              </div>
               <h3 class="features-list-title">Пунктуальность</h3>
               <p class="text">
-                Задача организации, в особенности же рамки и место обучения
+                Задача организации, в о собенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
 
             <li class="item">
+              <div class="backsvg">
+                <svg class="svgformaticon">
+                  <use href="./images/icons.svg#iconcomp"></use>
+                </svg>
+              </div>
               <h3 class="features-list-title">Планирование</h3>
               <p class="text">
                 Равным образом консультация с широким активом в значительной
@@ -84,6 +110,11 @@
             </li>
 
             <li class="item">
+              <div class="backsvg">
+                <svg class="svgformaticon">
+                  <use href="./images/icons.svg#iconastronaut"></use>
+                </svg>
+              </div>
               <h3 class="features-list-title">Современные технологии</h3>
               <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -129,7 +160,7 @@
           <h2 class="our-team-title">Наша команда</h2>
 
           <ul class="our-team-list list">
-            <li class="item">
+            <li class="item ourteam">
               <img
                 src="./images/igor.jpg"
                 alt="PhotoIgor"
@@ -139,10 +170,33 @@
               <div class="our-team-box">
                 <h3 class="title">Игорь Демьяненко</h3>
                 <p class="text">Product Designer</p>
+                <div class="diviconspeople">
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon icon">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon facebook">
+                      <use href="./images/icons.svg#Facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </li>
 
-            <li class="item">
+            <li class="item ourteam">
               <img
                 src="./images/olga.jpg"
                 alt="PhotoOlga"
@@ -152,10 +206,33 @@
               <div class="our-team-box">
                 <h3 class="title">Ольга Репина</h3>
                 <p class="text">Frontend Developer</p>
+                <div class="diviconspeople">
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon icon">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon facebook">
+                      <use href="./images/icons.svg#Facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </li>
 
-            <li class="item">
+            <li class="item ourteam">
               <img
                 src="./images/nikolai.jpg"
                 alt="PhotoNikolai"
@@ -165,10 +242,33 @@
               <div class="our-team-box">
                 <h3 class="title">Николай Тарасов</h3>
                 <p class="text">Marketing</p>
+                <div class="diviconspeople">
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon icon">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon facebook">
+                      <use href="./images/icons.svg#Facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </li>
 
-            <li class="item">
+            <li class="item ourteam">
               <img
                 src="./images/michael.jpg"
                 alt="PhotoMihail"
@@ -178,6 +278,29 @@
               <div class="our-team-box">
                 <h3 class="title">Михаил Ермаков</h3>
                 <p class="text">UI Designer</p>
+                <div class="diviconspeople">
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon icon">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon facebook">
+                      <use href="./images/icons.svg#Facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink" href="https:/google.com">
+                    <svg class="people-icon">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                </div>
               </div>
             </li>
           </ul>
@@ -185,27 +308,97 @@
       </section>
     </main>
 
-    <footer class="section footer">
-      <div class="container">
-        <a href="./index.html" class="logo footer">
-          Web<span class="accent-footer">Studio</span>
-        </a>
-        <address class="address">
-          <p class="item">г. Киев, пр-т Леси Украинки, 26</p>
+    <!-------------------партнеры  ---------------------------->
+    <section class="partners">
+      <h3 class="hpartners">Постоянные клиенты</h3>
+      <div class="partners-div container">
+        <div></div>
+        <ul class="partners-list list">
+          <li class="partners-item item">
+            
+            <svg class="partners-svg">
+              <use href="./images/icons.svg#iconLogo1"></use>
+            </svg>
+          </li>
 
-          <ul class="footer list">
-            <li class="item">
-              <a href="mailto:info@example.com" class="address-info"
-                >info@example.com</a
-              >
-            </li>
-            <li class="item">
-              <a href="tel:+380991111111" class="address-info"
-                >+38 099 111 11 11</a
-              >
-            </li>
-          </ul>
-        </address>
+          <li class="partners-item item">
+            
+            <svg class="partners-svg">
+              <use href="./images/icons.svg#iconLogo2"></use>
+            </svg>
+          </li>
+          <li class="partners-item item">
+            
+            <svg class="partners-svg">
+              <use href="./images/icons.svg#iconLogo3"></use>
+            </svg>
+          </li>
+          <li class="partners-item item">
+            
+            <svg class="partners-svg">
+              <use href="./images/icons.svg#iconLogo4"></use>
+            </svg>
+             <li class="partners-item item">
+            
+            <svg class="partners-svg">
+              <use href="./images/icons.svg#iconLogo5"></use>
+            </svg>
+          </li>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="section footer">
+      <div class="footmain">
+      <div class="ooteradress">
+                    <a href="./index.html" class="logo footer">
+                      Web<span class="accent-footer">Studio</span>
+                    </a>
+                    <address class="address">
+                      <p class="item">г. Киев, пр-т Леси Украинки, 26</p>
+
+                      <ul class="footer list">
+                        <li class="item">
+                          <a href="mailto:info@example.com" class="address-info"
+                            >info@example.com</a
+                          >
+                        </li>
+                        <li class="item">
+                          <a href="tel:+380991111111" class="address-info"
+                            >+38 099 111 11 11</a
+                          >
+                        </li>
+                      </ul>
+                    </address>
+      </div>
+      <div class="footericons">
+        <p class="textfooter">ПРИСОЕДИНЯЙТЕСЬ </p>
+       <div class="diviconspeople">
+                  <a class="iconlink icfot" href="https:/google.com">
+                    <svg class="people-icon ">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink icfot" href="https:/google.com">
+                    <svg class="people-icon ">
+                      <use href="./images/icons.svg#twitter"></use>
+                    </svg>
+                  </a>
+
+                  <a class="iconlink icfot" href="https:/google.com">
+                    <svg class="people-icon ">
+                      <use href="./images/icons.svg#Facebook"></use>
+                    </svg>
+                  </a>
+                  <a class="iconlink icfot" href="https:/google.com">
+                    <svg class="people-icon ">
+                      <use href="./images/icons.svg#email"></use>
+                    </svg>
+                  </a>
+                </div>  
+
+      </div>
       </div>
     </footer>
   </body>
