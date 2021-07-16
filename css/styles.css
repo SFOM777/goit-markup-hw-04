@@ -500,10 +500,11 @@ body {
 .partners-item:hover svg,
 .partners-item:hover {
   fill: #2196f3;
-  border-color: 1px solid #2196f3;
+  border-color:  #2196f3;
   box-sizing: border-box;
   border-radius: 4px;
 }
+
 
 .hpartners {
   margin-top: 94px;
@@ -565,6 +566,10 @@ body {
   border-radius: 4px;
 }
 
+.portfolio-examples.list .item:hover {
+  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f,
+    0px 1px 1px 0px #0000001f;
+}
 .menu-nav .item:not(:last-child) {
   margin-right: 8px;
 }
