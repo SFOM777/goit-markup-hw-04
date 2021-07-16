@@ -320,6 +320,7 @@ body {
 .our-team .item {
   background-color: var(--bg-color);
   border-radius: 0px 0px 4px 4px;
+  padding-bottom: 30px;
 }
 
 .ourteam-list {
@@ -500,11 +501,10 @@ body {
 .partners-item:hover svg,
 .partners-item:hover {
   fill: #2196f3;
-  border-color:  #2196f3;
+  border-color: #2196f3;
   box-sizing: border-box;
   border-radius: 4px;
 }
-
 
 .hpartners {
   margin-top: 94px;
